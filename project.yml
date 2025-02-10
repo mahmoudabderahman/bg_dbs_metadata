@@ -1,0 +1,7 @@
+id: 'f95e5fe5-7204-48c7-50ed-08dd4532a4d3'
+name: 'mahmoud_dbs_test'
+description: ''
+version: 'v1.5'
+configuration:
+  id: 'biGENIUS.Implementation.Generator.VaultAndMart.Spark.Databricks'
+  version: '1.8.0'
