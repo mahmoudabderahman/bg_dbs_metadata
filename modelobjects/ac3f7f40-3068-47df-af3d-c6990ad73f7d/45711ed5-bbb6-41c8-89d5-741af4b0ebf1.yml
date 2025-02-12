@@ -1,0 +1,106 @@
+id: '45711ed5-bbb6-41c8-89d5-741af4b0ebf1'
+name: 'JOBFUNCTION'
+description: 'Generated Model Object from JOBFUNCTION'
+modelObjectTypeId: 'ac3f7f40-3068-47df-af3d-c6990ad73f7d'
+terms:
+  - id: '7762355b-8c80-4ec4-ac7e-f98761763106'
+    name: 'BG_LoadTimestamp'
+    description: 'Default term with the load timestamp'
+    defaultTermId: '3fdfd83b-00b6-47e7-b139-9b25993626ac'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '504295df-46f1-43ef-9a10-0969867e9fd9'
+    name: 'Hub_HK'
+    description: 'Identifier of a record'
+    defaultTermId: '2689505b-2079-48b5-9fea-60ac633b04fe'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '9467675d-8aec-4bcf-93a6-8a8bc6cdfd90'
+    name: 'BG_SourceSystem'
+    description: 'Default term with an identifier of the source system'
+    defaultTermId: 'c3654f1c-5c92-4200-82ef-baac15ffa0ba'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '8fe9e653-e43e-41f3-9146-41dce5032757'
+    name: 'JOBFUNCTION_ID'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '7e84496a-d8ba-4ae8-83ee-9e020c168f16'
+    name: 'JOBFUNCTION_DE'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'e239c35d-a9bb-4d13-ad1f-d3dce9a6e349'
+    name: 'JOBFUNCTION_EN'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'e9885ac4-f23c-4baf-8946-f264e3e8ec6f'
+    name: 'dt'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+dataflows:
+  - id: 'b82feb23-30af-42a2-86cf-646e073985c1'
+    name: 'Dataflow1'
+    dataflowSets:
+      - id: '4fe286c5-3039-447a-a0ae-065ad683a663'
+        name: 'Set1'
+        dataflowModelObjects:
+          - id: 'a1fef2d4-c6d8-46b8-b9a6-7181bc2bd6ee'
+            alias: 's1'
+            sourceModelObjectId: '0862e540-9c3f-43ec-bcce-bf9816cc3387'
+        termMappings:
+          - termId: '7762355b-8c80-4ec4-ac7e-f98761763106'
+          - termId: '504295df-46f1-43ef-9a10-0969867e9fd9'
+          - termId: '9467675d-8aec-4bcf-93a6-8a8bc6cdfd90'
+          - expression: 'a1fef2d4-c6d8-46b8-b9a6-7181bc2bd6ee.045dcacb-5944-401b-abb2-a562b2c159fc'
+            termId: '8fe9e653-e43e-41f3-9146-41dce5032757'
+          - expression: 'a1fef2d4-c6d8-46b8-b9a6-7181bc2bd6ee.8e40d6d5-e062-4529-b6d3-88e294d1c841'
+            termId: '7e84496a-d8ba-4ae8-83ee-9e020c168f16'
+          - expression: 'a1fef2d4-c6d8-46b8-b9a6-7181bc2bd6ee.1172247e-aafa-4460-be41-2dba4a4245f4'
+            termId: 'e239c35d-a9bb-4d13-ad1f-d3dce9a6e349'
+          - expression: 'a1fef2d4-c6d8-46b8-b9a6-7181bc2bd6ee.54765ffb-5a75-450a-befe-2d5706e9e3b3'
+            termId: 'e9885ac4-f23c-4baf-8946-f264e3e8ec6f'
