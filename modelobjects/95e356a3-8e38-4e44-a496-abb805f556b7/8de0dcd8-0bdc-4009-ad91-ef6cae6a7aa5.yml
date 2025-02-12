@@ -1,0 +1,58 @@
+id: '8de0dcd8-0bdc-4009-ad91-ef6cae6a7aa5'
+name: 'DEPARTMENT'
+modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
+terms:
+  - id: '33074ef8-793c-42d7-a344-73b34a878773'
+    name: 'DEPARTMENT_ID'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: 'bcf6b14d-c6cc-4266-aff6-e6728b7a47b2'
+    name: 'BRANCH_ID'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '75ac01b7-6040-431d-81fc-30818f23e9ec'
+    name: 'DEPARTMENT_DE'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'f951c618-c96f-4d94-866d-93c0e4f579c5'
+    name: 'DEPARTMENT_EN'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '6d237961-4877-44f8-a063-85b363a1ff4a'
+    name: 'dt'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+tags:
+  - '$discovery#id#3dc26cee-f794-42b3-a94b-5266b032176e'
+  - '$initial#name#department'
+  - '$sourcesystem#id#99834cb6-44e7-406e-9741-a32b09fe76d7'
