@@ -1,0 +1,118 @@
+id: '9a16c6e2-0148-4fbb-9ea2-a8e8d010a13d'
+name: 'DEPARTMENT'
+description: 'Generated Model Object from DEPARTMENT'
+modelObjectTypeId: 'ac3f7f40-3068-47df-af3d-c6990ad73f7d'
+terms:
+  - id: '3f065e7a-c396-4af8-817a-249e56d3d138'
+    name: 'BG_LoadTimestamp'
+    description: 'Default term with the load timestamp'
+    defaultTermId: '3fdfd83b-00b6-47e7-b139-9b25993626ac'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '214f4959-56df-4f38-b8c2-703c0890e8ae'
+  - id: '88eb4e85-27f1-4f4f-81bb-a07a94b03fe4'
+    name: 'Hub_HK'
+    description: 'Identifier of a record'
+    defaultTermId: '2689505b-2079-48b5-9fea-60ac633b04fe'
+    hiddenInSource: false
+    hiddenInTarget: true
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: true
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'a0fb8bbf-dc04-444a-b555-261cb38096c3'
+    name: 'BG_SourceSystem'
+    description: 'Default term with an identifier of the source system'
+    defaultTermId: 'c3654f1c-5c92-4200-82ef-baac15ffa0ba'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: false
+    isDefaultTerm: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'f400d815-8491-475a-a50a-be7d64c1cc52'
+    name: 'DEPARTMENT_ID'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: 'c6f208b6-6dc4-4977-bed0-a7775c9ff888'
+  - id: '003bb415-f44e-4a1a-8f35-8ab086d5e6df'
+    name: 'BRANCH_ID'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '66dc70d9-618c-4fbb-bfab-7cf48ce0eb5a'
+    name: 'DEPARTMENT_DE'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: 'c1862bc3-e5b1-41ad-8d48-c5e9e2038b70'
+    name: 'DEPARTMENT_EN'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: true
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+  - id: '72f54f38-f6e9-4b7c-ad66-252538572818'
+    name: 'dt'
+    hiddenInSource: false
+    hiddenInTarget: false
+    isBusinessKey: true
+    isForeignKey: false
+    isIdentity: false
+    isNullable: false
+    dataType:
+      platformDataTypeId: '411ce059-36cd-4df5-9d15-97057995eb76'
+dataflows:
+  - id: '1fbaa358-18c5-4acd-8a29-03b18a0d6639'
+    name: 'Dataflow1'
+    dataflowSets:
+      - id: '1a7a9ef7-9855-48b5-8818-bdeea4c0c60c'
+        name: 'Set1'
+        dataflowModelObjects:
+          - id: 'a93a347b-81d2-407f-bbcc-30a3f20e42a3'
+            alias: 's1'
+            sourceModelObjectId: 'edb1ab6c-60cb-4466-b6a1-5a35675be808'
+        termMappings:
+          - termId: '3f065e7a-c396-4af8-817a-249e56d3d138'
+          - termId: '88eb4e85-27f1-4f4f-81bb-a07a94b03fe4'
+          - termId: 'a0fb8bbf-dc04-444a-b555-261cb38096c3'
+          - expression: 'a93a347b-81d2-407f-bbcc-30a3f20e42a3.d8aef778-2935-49d3-b5a4-4bcd8e93ec3f'
+            termId: 'f400d815-8491-475a-a50a-be7d64c1cc52'
+          - expression: 'a93a347b-81d2-407f-bbcc-30a3f20e42a3.e8348458-4a91-45d8-ad1e-c6bfb1e27d22'
+            termId: '003bb415-f44e-4a1a-8f35-8ab086d5e6df'
+          - expression: 'a93a347b-81d2-407f-bbcc-30a3f20e42a3.bb7a4b71-1b51-4375-b4f7-dec072c83b36'
+            termId: '66dc70d9-618c-4fbb-bfab-7cf48ce0eb5a'
+          - expression: 'a93a347b-81d2-407f-bbcc-30a3f20e42a3.4ee96492-4246-499a-80c3-aebb133a70d2'
+            termId: 'c1862bc3-e5b1-41ad-8d48-c5e9e2038b70'
+          - expression: 'a93a347b-81d2-407f-bbcc-30a3f20e42a3.e903bc1f-863b-4ef0-a796-8165670231b9'
+            termId: '72f54f38-f6e9-4b7c-ad66-252538572818'
